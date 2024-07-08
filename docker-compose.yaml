@@ -35,7 +35,9 @@ services:
     restart: unless-stopped
 
   nginx:
-    image: nginx:alpine
+    build:
+        context: .
+        dockerfile: Dockerfile
     environment:
       - SERVICE_FQDN_PGADMINNGINX_80
     volumes:
