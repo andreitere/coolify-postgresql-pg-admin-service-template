@@ -21,7 +21,7 @@ services:
       - SERVICE_FQDN_PGADMIN_80
       - 'PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL:-test@domain.local}'
       - 'PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD:-super_strong_password_not}'
-      - PGADMIN_CONFIG_SERVER_MODE=False
+      - PGADMIN_CONFIG_SERVER_MODE=True
     volumes:
       - 'pgadmin-data:/var/lib/pgadmin'
     depends_on:
