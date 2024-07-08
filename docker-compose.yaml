@@ -19,8 +19,8 @@ services:
     image: dpage/pgadmin4
     environment:
       - SERVICE_FQDN_PGADMIN_80
-      - 'PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}'
-      - 'PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD:-admin}'
+      - 'PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL:-test@domain.local}'
+      - 'PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD:-super_strong_password_not}'
       - PGADMIN_CONFIG_SERVER_MODE=False
     volumes:
       - 'pgadmin-data:/var/lib/pgadmin'
