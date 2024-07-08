@@ -40,9 +40,6 @@ services:
       - SERVICE_FQDN_PGADMINNGINX_80
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-    depends_on:
-      pgadmin:
-        condition: service_healthy
     restart: unless-stopped
 
 volumes:
